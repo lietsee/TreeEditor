@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "gh-pages": "^6.3.0",
         "react": "^18.3.1",
         "react-dom": "^18.3.1"
     },
@@ -18,10 +19,15 @@
         "typescript": "^5.8.3",
         "vite": "^6.2.6"
     },
+
+    "homepage": "https://lietsee.github.io/TreeEditor",
+
     "scripts": {
         "dev": "vite",
         "build": "vite build",
         "preview": "vite preview",
-        "tailwind:init": "tailwindcss init -p"
+        "tailwind:init": "tailwindcss init -p",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     }
 }
